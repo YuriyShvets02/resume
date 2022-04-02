@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(156, 220, 158);
+    transition: all .2s;
+
+}
+
+a:active {
+    color: rgb(224, 224, 130);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background: #676a70b4;
+    color: beige;
+}
+
+.info {
+    display: flex;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.btn {
+    background: rgb(90, 131, 90);
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px
+}
+
+.btn:hover {
+    /* background: rgb(224, 224, 130); */
+    opacity: 0.8;
+    /* color: #000; */
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #cfd3dc;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card_hobbi {
+    background: rgb(116, 193, 116);
+}
+
+.card_experience {
+    background: rgb(224, 224, 130);
+    color: rgba(86, 81, 81, 0.867);
+}
+
+.card_contact {
+    background: rgb(248, 199, 207);
+    color: rgba(86, 81, 81, 0.867);
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: rgb(71, 69, 69);
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: gray;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form_row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form_row .form_group {
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+    /* width: calc(50% - 20px); */
+
+}
+
+.form_row .form_group:last-child {
+    margin-right: 0;
+}
+
+.form_group label {
+    display: block;
+    font-size: 14px;
+}
+
+.form_group input,
+.form_group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+@media (max-width: 650px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .form_row {
+        display: block;
+    }
+    .form_row .form_group{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

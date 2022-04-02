@@ -1,80 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywoords" content="shvets, cv, resume">
     <meta name="description" content="sait - resume Yurii Shvets">
-    <title>Document</title>
+    <link rel="stylesheet" href="stylees-resume.css">
+    <title>resume</title>
 </head>
-<body>
-    <img src="zebra.png" alt="Im" width="150">
-    <h1>Yurii Shvets</h1>
-    <p>I am a vegetarian and study <strong>HTML CSS JS</strong></p>
-    <p>love: <em>take photos, make friends, play sports,
-        love the sea</em></p>
-    <h3>list of social networks </h3>
-    <a href="https://pl-pl.facebook.com/" target="_blank">Faceboook</a>
-    |
-    <a href="https://www.instagram.com/" target="``_blank">Instagram</a>
-    |
-    <a href="https://www.youtube.com/watch?v=NUhbFzC0Ksc" target="_blank">youtube</a>
-    <h3>My hobbies</h3>
-    <ol>
-        <li>photografija</li>
-        <li>football</li>
-        <li>cars</li>
-        <li>bicycles</li>
-    </ol>
- <h2>досвід роботи</h2>
- <table>
-     <thead>
-         <tr>
-             <th>назва</th>
-             <th>посада</th>
-             <th>рік</th>
-         </tr>
-     </thead>
-     <tbody>
-         <tr>
-             <td>Green</td>
-             <td>photografer</td>
-             <td>2013-2022</td>
-         </tr>
-     </tbody>
-     <tbody>
-        <tr>
-            <td>Green</td>
-            <td>photografer</td>
-            <td>2013-2022</td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <td>Green</td>
-            <td>photografer</td>
-            <td>2013-2022</td>
-        </tr>
-    </tbody>
- </table>
 
- <h2><strong>contact me</strong></h2>
- <form action="">
-     <div>
-           <label for="write your name">red name:</label>
-           <input type="text" id="write your name" placeholder="write your name">
+<body>
+    <div class="container">
+        <div class="info">
+            <img src="zebra.png" alt="Im" width="150">
+            <div class="info-text">
+                <h1>Yurii Shvets</h1>
+                <p>I am a vegetarian and study <strong>HTML CSS JS</strong></p>
+                <p>love: <em>take photos, make friends, play sports,
+                        love the sea</em></p>
+                <h3>list of social networks </h3>
+                <a href="https://pl-pl.facebook.com/" target="_blank">Faceboook</a>
+                |
+                <a href="https://www.instagram.com/shveps_photo/" target="``_blank">Instagram</a>
+                |
+                <a href="https://www.youtube.com/watch?v=NUhbFzC0Ksc" target="_blank">youtube</a>
+            </div>
+        </div>
+        <div class="card card_hobbi">
+            <h3>My hobbies</h3>
+            <ol class="list">
+                <li>photografija</li>
+                <li>football</li>
+                <li>cars</li>
+                <li>bicycles</li>
+            </ol>
+        </div>
+        <div class="card card_experience">
+            <h2>work experience</h2>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>назва</th>
+                        <th>посада</th>
+                        <th>рік</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Green</td>
+                        <td>photografer</td>
+                        <td>2013-2022</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Green</td>
+                        <td>photografer</td>
+                        <td>2013-2022</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Green</td>
+                        <td>photografer</td>
+                        <td>2013-2022</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="">
+            <form class="form" action="">
+                <h2><strong>contact me</strong></h2>
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="write your name">red name:</label>
+                        <input type="text" id="write your name" placeholder="write your name">
+                    </div>
+                    <div class="form_group">
+                        <label for="email">red email:</label>
+                        <input type="text" id="email" placeholder="write your email">
+                    </div>
+                </div>
+                <div class="form_group">
+                    <label for="message">your massage:</label>
+                    <textarea name="" id="message" cols="25" rows="5" placeholder="write your massange"></textarea>
+                </div>
+                <button class="btn" type="submit">send</button>
+        </div>
+        </form>
     </div>
-    <div>
-          <label for="email">red email:</label>
-          <input type="text" id="email" placeholder="write your email">
-    </div>
-    <div>
-        <label for="message">your massage:</label>
-        <br>
-        <textarea name="" id="message" cols="25" rows="5" placeholder="write your massange"></textarea>
-    </div>
-    <button type="submit">send</button>
-</form>
 </body>
+
 </html>
